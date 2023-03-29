@@ -1,0 +1,243 @@
+/*.container {
+  height: 100vh;
+  overflow: hidden;
+}*/
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-img {
+  background-image: url('5.jpg');
+  background-size: cover;
+  filter: blur(0px);
+  /* adjust the blur amount to your preference */
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+/* Optional: add styles for a semi-transparent overlay on top of the blurred image */
+.bg-img::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* adjust the color and opacity to your preference */
+  z-index: -1;
+}
+
+/* Header Styles */
+.header {
+  background-color: transparent;
+  color: transparent;
+  padding: 5px;
+  text-align: right;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 40px;
+  letter-spacing: 5px;
+  color: orange;
+  margin-top: 1%;
+
+}
+
+.header .subtitle {
+  font-size: 45px;
+  line-height: 20px;
+  display: block;
+  margin-top: 1%;
+  color: white;
+  /* margin-left: 19%; */
+}
+
+
+/* Media Query for Responsive Design */
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 30px;
+  }
+
+  .header .subtitle {
+    font-size: 40px;
+    line-height: 30px;
+  }
+  .main .section .section-title {
+    font-size: 20px;
+    width: 50%;
+  }
+
+  .main{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    /* border: solid 2px red; */
+  }
+  .main .section {
+    margin: 0px;
+    width: 100%;
+  
+  }
+  .main .section-text{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0px;
+    
+  }
+  .section::after{
+    display: none;
+  }
+
+}
+
+/* Main Styles */
+.main {
+  max-width: fit-content;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 15%;
+
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  
+}
+
+.middle-title {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  /* margin-top: 5%; */
+  margin-bottom: 0px;
+  background-color: transparent;
+  border: 1px solid #d8701b;
+  border-radius: 60px;
+  padding: 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+.middle-title:hover {
+  color: rgb(228, 172, 68);
+}
+
+.middle-text {
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 0%;
+  margin-bottom: 0px;
+  /* max-width: 700px; */
+  width: 100%;
+}
+
+.section {
+  width: calc((50% - 40px) / 2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: -15%;
+  color: white;
+  margin-right: auto;
+  position: relative;
+  padding-left: 20px;
+
+}
+
+.section::after {
+  content: "";
+  position: absolute;
+  top: 100px;
+  bottom: 50px;
+  left: 0;
+  width: 1px;
+  height: calc(80% - 50px);
+  background-color: rgb(255, 102, 0);
+  box-shadow: 0 0 10px 10px rgba(255, 102, 0, 0.5);
+
+}
+
+.section:first-child::after {
+  display: none;
+}
+
+.section-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: auto;
+  background-color: transparent;
+  border: 1px solid #d8701b;
+  border-radius: 60px;
+  padding: 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+.section-title:hover {
+  color: rgb(228, 172, 68);
+}
+
+
+.section-text {
+  font-size: 20px;
+  line-height: 1.5;
+  ;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  padding-left: 20px;
+  /* max-width: 2500px; */
+  width: 100%;
+}
+
+.list {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: left;
+  margin-top: 0%;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 60px;
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: orange;
+  color: #ffffff;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
