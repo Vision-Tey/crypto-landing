@@ -66,6 +66,10 @@ body {
   .header h1 {
     font-size: 30px;
   }
+  .middle .middle-text{
+    margin-top: 10px;
+    font-size: 17px;
+  }
 
   .header .subtitle {
     font-size: 40px;
@@ -79,18 +83,23 @@ body {
   .main{
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin-left: 0px;
     /* border: solid 2px red; */
   }
   .main .section {
     margin: 0px;
-    width: 100%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
   
   }
   .main .section-text{
     width: 100%;
+    font-size: 15px;
     margin-bottom: 20px;
     padding: 0px;
+    
+    
     
   }
   .section::after{
