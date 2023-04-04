@@ -14,7 +14,17 @@
 <body>
   <div class="bg-img"></div>
   <div class="header">
-    <h1>CRYPTO MARKETS <span class="subtitle">UGANDA</span></h1>
+    <div class="header-image"><img src="7.png" alt="Your Logo"></div>
+    <div class="right-header">
+      <div class="header-text">
+        <h1> CRYPTO MARKETS <span class="subtitle">UGANDA</span></h1>
+
+      </div>
+      <div class="register_btn popup-button">
+        <button id="register-btn" class="button-17" role="button">Register Now</button>
+      </div>
+    </div>
+
   </div>
   <section class="middle">
     <h2 class="middle-title">Our Company</h2>
@@ -22,41 +32,85 @@
       to our clients is to reduce the risk of forex trading. In financing we are always able to offer our oveer seas
       buyers the most creative and desirable financing options available. <br> The basis of how we work and serve our
       customers depends on the honesty and intergrity thus we say profits and integrity can survive together</p>
+  </section>
+  <div class="main">
+    <section class="section">
+      <h2 class="section-title">Our Services</h2>
+      <ul class="list">
+        <li>P2P trading on all platforms</li>
+        <li>Forex trading lessons</li>
+        <li>Opening Trading accounts</li>
+        <li>Securing Trading accounts</li>
+        <li>Staking the DM Token</li>
+        <li>Market and Signal Analysis tools</li>
+      </ul>
+    </section>
+    <section class="section">
+      <h2 class="section-title">Our Vision</h2>
+      <p class="section-text">To create a long term destination for our business and engage in trade with focus on
+        quality services to customers and professional competences</p>
+    </section>
+    <section class="section">
+      <h2 class="section-title">Mission</h2>
+      <p class="section-text">To be the leading traders in Uganda providing the best quality services</p>
+    </section>
+    <section class="section">
+      <h2 class="section-title">Our Values</h2>
+      <ul class="list">
+        <li>Honesty, surety and trust</li>
+        <li>Applying ethics</li>
+        <li>Satisfying customers</li>
+      </ul>
+    </section>
+  </div>
 
-    <div class="main">
-      <section class="section">
-        <h2 class="section-title">Our Vision</h2>
-        <p class="section-text">To create a long term destination for our business and engage in trade with focus on
-          quality services to customers and professional competences</p>
-      </section>
-      <section class="section">
-        <h2 class="section-title">Mission</h2>
-        <p class="section-text">To be the leading traders in Uganda providing the best quality services</p>
-      </section>
-      <section class="section">
-        <h2 class="section-title">Our Values</h2>
-        <p class="section-text">
-        <ul class="list">
-          <li>Honesty, surety and trust</li>
-          <li>Applying ethics</li>
-          <li>Satisfying customers</li>
-        </ul>
-        </p>
+  <footer>
+    <div class="container">
+
+      <div class="copywrite">
+        &copy; 2023 Your Company. All rights reserved.
+      </div>
     </div>
+  </footer>
+
+
+
+  <!-- Popup form -->
+  <div class="popup-form">
+    <div class="form-container">
+      <h2>Register</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="contact">Contact:</label>
+        <input type="tel" id="contact" name="contact" required>
+
+        <label for="services">Services:</label>
+        <select id="services" name="services" required>
+          <option value="">--Select service--</option>
+          <option value="Service 1">P2P trading on all platforms</option>
+          <option value="Service 2">Forex trading lessons</option>
+          <option value="Service 3">Opening Trading accounts</option>
+            <option value="Service 4">Securing Trading accounts</option>
+            <option value="Service 5">Staking the DM Token</option>
+            <option value="Service 6">Market and Signal Analysis tools</option>
+        </select>
+
+        <button type="submit">Submit</button>
+      </form>
+      <button id="close-btn">x</button>
     </div>
-    <footer>
-      <div class="container">
-
-        <div class="copywrite">
-          &copy; 2023 Your Company. All rights reserved.
-        </div>
-       </div>
-    </footer>
-    <div class="social-icons">
-      <a href="#" target="_blank"><i class="fab fa-facebook"> </i></a>
+  </div>
 
 
 
+  <script src="script.js"></script>
 </body>
+
+
 
 </html>
