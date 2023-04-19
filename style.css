@@ -135,6 +135,24 @@ body {
     display: none;
   }
 
+
+}
+@media (max-width: 600px) {
+ .social-media a .round-img{
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .social-media .crypto {
+    font-size: 15px;
+  }
+  .footer_rights{
+    width: 100%;
+  }
+  .footer_socials{
+    width: 100%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -143,6 +161,15 @@ body {
     max-height: 70px;
     margin-left: 20px;
 
+  }
+  .social-media a .round-img{
+    border-radius: 15px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .social-media .crypto {
+    font-size: 10px;
   }
 
   .header h1 {
@@ -164,8 +191,8 @@ body {
     margin-bottom: 30px;
   }
 
-  
-  .popup-form .form-container{
+
+  .popup-form .form-container {
     top: 50%;
     left: 50%;
     width: 190px;
@@ -377,26 +404,51 @@ body {
   margin-bottom: 60px;
 }
 
+/* Footer styles */
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
+  background-color: #312828e5;
+  position: absolute;
+  padding-top: 20px;
+  text-align: center;
   width: 100%;
-  height: 30px;
-  background-color: orange;
-  color: #ffffff;
 }
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+footer .container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
-  height: 100%;
+  justify-content: space-around;
+
 }
 
+.social-media {
+  margin-bottom: 10px;
+}
 
+.social-media a {
+  margin: 0 15px;
+}
+
+.round-img {
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+.crypto {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.copywrite {
+  display: flex;
+  flex-direction: column;
+  color: yellow;
+  /* margin-top: 6%;
+  margin-left: 40%; */
+}
 
 .popup-form {
   position: fixed;
@@ -409,6 +461,7 @@ footer {
   display: none;
   align-content: center;
 }
+
 /* .body.popup-form-parent {
   filter: blur(10px) !important;
 } */
@@ -430,6 +483,7 @@ footer {
 .form-container h2 {
   margin-top: 0;
   color: #ccc;
+  margin-left: 60px;
 }
 
 .form-container label {
